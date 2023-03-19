@@ -1,17 +1,136 @@
+<!-- https://www.bootstrapdash.com/product/miri-ui?ref=23 ??? -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
+    <title>Weather Dashboard</title>
 
- 
+<!-- Font awesome: added Special stylesheet to refer to the font in a CSS style -->
+    <link rel="stylesheet" href ="style.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 28px;
+      }
+    </style> 
+</head>
 <body>
-  
-</body>
-<script src="script.js"></script>  
+
+<!-- Header -->
+    <header class=" ">
+        <h1 class="">
+        <i class=""></i>
+        Weather Dashboard
+      </h1> 
+      <P id="today" class="h4 text-black"></P>  
+   </header>
+
+
+<!-- Container -->
+    <div class="Container">
+     <div class="row">  
+    </div>
+
+    <!-- Sidebar: Search -->
+    <sidebar class= "col-med-4 bg-dark px-2 my-3">
+
+<!-- The sidebar -->
+    <form id="search-form" class="form-group mt-1 pt-1">
+        <form method="get">
+        <label>Enter City Name:
+        <input name="submitted-name" autocomplete="name" />
+        </label>
+    <button>Search</button>
+<!--  remove dots? change color-->
+  <ul>
+         <li>
+            <a href="#" class="active">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Sydney</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="active">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Melbourne</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="active">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Adelaide</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="active">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Perth</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="active">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Darwin</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="active">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Brisbane</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="active">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="item">Tasmania</span>
+            </a>
+        </li>             
+ </form>
+ <!-- Search Input : leave -->
+
+ <!-- Main Content -->
+    <main class="col-med-8 px-2 mt-3"></main>
+
+<!--Current Weather data  -->
+    <section class="card">
+
+<!-- Current city -->
+ <div class="card-header d-flex align-items-center py-3">
+  <p id="city" class="h2 my-o mr-2"></p>
+  <i id="icon" class=""></i>
+  <div class="card-body py-0"> 
+ </div>
+
+ <!-- Current Conditions -->
+
+ <!-- Create 3 categories: temp, humidit, BP -->
+
+ <!-- 5 day weather prediction -->
+
+
+
+
+
+
+    </section> 
+   
+   <footer>
+    <footer class = " "></footer>
+    <p class=" "></p>
+   </footer>
+    
+        <script src="script.js"></script> 
+    </body> 
 </html>
+
+<!-- https://freefrontend.com/css-color-palettes/ -->
+<!-- https://github.com/jxhnkndl/weather-dashboard/blob/main/index.html -->
+<!-- https://codepen.io/djdabe/pen/qXgJNV -->
+<!-- https://www.youtube.com/watch?v=xiQIjbRFWLE -->

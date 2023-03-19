@@ -1,3 +1,72 @@
+
 body {
- background-color:pink ;   
+ position: relative;
+ overflow-x:hidden;
+ background-color: #F2AD9F;   
 }
+
+#wrapper {
+padding-left:20px;
+transition:all 0.5s
+}
+
+#sidebar-wrapper {
+ z-index: 1000;
+    left: 220px;
+    width: 0;
+    height: 100%;
+    margin-left: -220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #1a1a1a;  
+}
+
+.sidebar-header {
+    text-align: center;
+    font-size:20px ;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.container {
+padding-bottom: 40px;
+padding-top: 40px;
+padding-left: 40px;
+padding-right: 40px;
+}
+
+.search-item, 
+#delete-history{
+  cursor: pointer;  
+}
+
+.search-item, :hover {
+   background-color:#DFE2D2;
+}
+
+@media ( max-width: 1200px) {
+ .five-day card{
+max-width: 20%
+ }   
+}
+
+@media ( max-width: 1200px) {
+ .five-day card{
+max-width: 30%
+ }   
+}
+
+@media ( max-width: 1200px) {
+ .five-day card{
+max-width: 40%
+ }   
+}
+
+@media ( max-width: 1200px) {
+ .five-day card{
+max-width: 50%
+ }   
+}
+
+<!--text: 323339-->
