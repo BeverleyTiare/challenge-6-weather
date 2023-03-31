@@ -1,72 +1,127 @@
 
-body {
- position: relative;
- overflow-x:hidden;
- background-color: #F2AD9F;   
+:root{
+ --primary:#DFE2D2;
+ --secondary:#48515B
 }
 
-#wrapper {
-padding-left:20px;
-transition:all 0.5s
+body{
+margin: 0;
+font-family:'Quicksand', sans-serif;
+background-color:#DFE2D2;
+
 }
 
-#sidebar-wrapper {
- z-index: 1000;
-    left: 220px;
-    width: 0;
-    height: 100%;
-    margin-left: -220px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    background: #1a1a1a;  
+h1{
+ margin: 10px 
+ font-weight: bold
+ text-color: #613864;
+}
+/* help*/
+header{
+  color:dark grey;
+  size:150px;
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:5px;
+  margin-bottom: 20px;
+
 }
 
-.sidebar-header {
-    text-align: center;
-    font-size:20px ;
-    position: relative;
-    width: 100%;
-    display: inline-block;
+.header {
+  background-color: #cfdb99;
+    padding: 20px;
+}
+/*help*/
+.Date{
+  margin: 5px;
+  padding-bottom: 15px;
+  font-size: 30px
+  
+} 
+  
+  /*Temp, Wind, Humidity Index ??*/
+
+.sidebar{
+ width: 75% 
+ border: inset 30px
+ paddng-left: 20px;
+ margin-right: 20px;
+ float: left;
+}
+/*help*/
+.search-form
+
+.CityName
+
+.active
+
+
+button: hover{
+ background-color: #48515B; 
+ padding: 10px;
+}
+/*help*/
+cityList{
+  
 }
 
-.container {
-padding-bottom: 40px;
-padding-top: 40px;
-padding-left: 40px;
-padding-right: 40px;
+.container-1{
+  display:flex;
 }
 
-.search-item, 
-#delete-history{
-  cursor: pointer;  
+.flex-container {
+  padding: 10px;
+  margin: 0;
+  border:solid 2px black;
+  display:flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  justify-content: space-around;
+  align-content: space-around;
+  column-gap: 40px;
 }
 
-.search-item, :hover {
-   background-color:#DFE2D2;
+
+
+.flex-box {
+  background: #48515B;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  padding-top: 25px;
+  line-height: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
 }
 
-@media ( max-width: 1200px) {
- .five-day card{
-max-width: 20%
- }   
+.flex-item{
+  background-color:white;
+  border:solid 1px black;
+  padding;5px;
+  
 }
 
-@media ( max-width: 1200px) {
- .five-day card{
-max-width: 30%
- }   
+@media (max-width: 767px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
-@media ( max-width: 1200px) {
- .five-day card{
-max-width: 40%
- }   
+.right {
+  padding: 20px;
 }
 
-@media ( max-width: 1200px) {
- .five-day card{
-max-width: 50%
- }   
-}
+.forecastInput
 
-<!--text: 323339-->
+
+
+
+
+
+
+
+
+
+

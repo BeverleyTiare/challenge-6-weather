@@ -1,136 +1,157 @@
-<!-- https://www.bootstrapdash.com/product/miri-ui?ref=23 ??? -->
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
 
-<!-- Font awesome: added Special stylesheet to refer to the font in a CSS style -->
-    <link rel="stylesheet" href ="style.css"
+    <!-- Font Awesome -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 28px;
-      }
-    </style> 
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
 </head>
+
+
+
 <body>
-
-<!-- Header -->
-    <header class=" ">
-        <h1 class="">
-        <i class=""></i>
-        Weather Dashboard
-      </h1> 
-      <P id="today" class="h4 text-black"></P>  
-   </header>
-
-
-<!-- Container -->
-    <div class="Container">
-     <div class="row">  
+    <div class="header">
+        <h1>Weather dashboard</h1>
     </div>
+    <section class="cityList">
+        <section class="textCont" id="cityName">
 
-    <!-- Sidebar: Search -->
-    <sidebar class= "col-med-4 bg-dark px-2 my-3">
+            <div class="center">
+                <div style="text-align: right; padding-right: 15px;" class="weather-data">
+                    <h2>
+                        <span id="Cityname">Sydney</span>
+                        (<span id="Date0">
+                        </span>)
+                    </h2>
+                    <div id="Temp0">Temp: 0 f</div>
+                    <div id="Wind0">wind: 0 MPH</div>
+                    <div id="Humidity0">Humidity: 0 %</div><br>
+                </div>
 
-<!-- The sidebar -->
-    <form id="search-form" class="form-group mt-1 pt-1">
-        <form method="get">
-        <label>Enter City Name:
-        <input name="submitted-name" autocomplete="name" />
-        </label>
-    <button>Search</button>
-<!--  remove dots? change color-->
-  <ul>
-         <li>
-            <a href="#" class="active">
-                <span class="icon"><i class="fas fa-home"></i></span>
-                <span class="item">Sydney</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="active">
-                <span class="icon"><i class="fas fa-home"></i></span>
-                <span class="item">Melbourne</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="active">
-                <span class="icon"><i class="fas fa-home"></i></span>
-                <span class="item">Adelaide</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="active">
-                <span class="icon"><i class="fas fa-home"></i></span>
-                <span class="item">Perth</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="active">
-                <span class="icon"><i class="fas fa-home"></i></span>
-                <span class="item">Darwin</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="active">
-                <span class="icon"><i class="fas fa-home"></i></span>
-                <span class="item">Brisbane</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="active">
-                <span class="icon"><i class="fas fa-home"></i></span>
-                <span class="item">Tasmania</span>
-            </a>
-        </li>             
- </form>
- <!-- Search Input : leave -->
+               
+                
+                <div class="right">
+                    <section class="sidebar"></section>
+                    <div id="search-form" class="form-group mt-2 pt-2">
 
- <!-- Main Content -->
-    <main class="col-med-8 px-2 mt-3"></main>
+                        <label>
+                            <bold>Enter City:</bold>
+                            <input id="city" name="submitted-name" autocomplete="name" />
+                        </label>
+                        <button id="searchButton">Search</button><br>
 
-<!--Current Weather data  -->
-    <section class="card">
+                       
+                            <!-- 5-Day Forecast; flexbox: ROW-->
 
-<!-- Current city -->
- <div class="card-header d-flex align-items-center py-3">
-  <p id="city" class="h2 my-o mr-2"></p>
-  <i id="icon" class=""></i>
-  <div class="card-body py-0"> 
- </div>
+                            <section class="container-1"></section>
+                            <section class="box-1">
+                                <h1>5-Day Weather Prediction</h1>
+                            </section>
 
- <!-- Current Conditions -->
+                            <div class="flex-container">
+                                <div class="flex-box">
+                                    <p id="Date1"></p>
+                                    <p id="Temp1"></p>
+                                    <p id="Wind1"></p>
+                                    <p id="Humidity1"></p>
+                                </div>
+                                <div class="flex-box">
+                                    <p id="Date2"></p>
+                                    <p id="Temp2"></p>
+                                    <p id="Wind2"></p>
+                                    <p id="Humidity2"></p>
+                                </div>
+                                <div class="flex-box">
+                                    <p id="Date3"></p>
+                                    <p id="Temp3"></p>
+                                    <p id="Wind3"></p>
+                                    <p id="Humidity3"></p>
+                                </div>
+                                <div class="flex-box">
+                                    <p id="Date4"></p>
+                                    <p id="Temp4"></p>
+                                    <p id="Wind4"></p>
+                                    <p id="Humidity4"></p>
+                                </div>
+                                <div class="flex-box">
+                                    <p id="Date5"></p>
+                                    <p id="Temp5"></p>
+                                    <p id="Wind5"></p>
+                                    <p id="Humidity5"></p>
+                                </div>
+                            </div>
 
- <!-- Create 3 categories: temp, humidit, BP -->
+                            <!-- Flex box content-->
 
- <!-- 5 day weather prediction -->
+                            <section class="ClearHistory">
+                                <section class="textCont" id="cityName">
 
+                                    <ul 
+                                    id="search-history" style="list-style-type:none">
+                                        <li>
+                                            <a href="#" class="active">
+                                                <span class="item">Sydney</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">
+                                                <span class="icon"><i class="fas fa-home"></i></span>
+                                                <span class="item">Paris</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">
+                                                <span class="icon"><i class="fas fa-home"></i></span>
+                                                <span class="item">New York</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">
+                                                <span class="icon"><i class="fas fa-home"></i></span>
+                                                <span class="item">Rejkavik</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">
+                                                <span class="icon"><i class="fas fa-home"></i></span>
+                                                <span class="item">Tokyo</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">
+                                                <span class="icon"><i class="fas fa-home"></i></span>
+                                                <span class="item">Rajastan</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">
+                                                <span class="icon"><i class="fas fa-home"></i></span>
+                                                <span class="item">Kathmandu</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <button id="Clear"> Clear History</button>
+                            </section>
 
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
 
+<!-- Script  -->
+<script src=""></script>
+<script src="script.js"></script>
 
-
-
-    </section> 
-   
-   <footer>
-    <footer class = " "></footer>
-    <p class=" "></p>
-   </footer>
-    
-        <script src="script.js"></script> 
-    </body> 
 </html>
-
-<!-- https://freefrontend.com/css-color-palettes/ -->
-<!-- https://github.com/jxhnkndl/weather-dashboard/blob/main/index.html -->
-<!-- https://codepen.io/djdabe/pen/qXgJNV -->
-<!-- https://www.youtube.com/watch?v=xiQIjbRFWLE -->
