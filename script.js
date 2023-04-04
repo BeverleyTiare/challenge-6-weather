@@ -11,13 +11,13 @@ function writeHistory() {
     localStorage.setItem("history", "[]");
   } else {
 
-    // convert it in to an array from a string
+    // Convert to an array from a string
     const history = JSON.parse(historyString)
 
-    // clear the history element
+    // Clear history 
     document.getElementById("search-history").innerHTML = ""
     
-    // append a element ot the history for each param in the array
+    // Append  element to history for each param in the array
     history.forEach(searchParam => {
       const listItem = document.createElement("li");
       listItem.innerText = searchParam
@@ -28,7 +28,7 @@ function writeHistory() {
     })
   }
 }
-//adding item to search history ( including local storage) 
+//Add item to search history ( including local storage) 
 function addCityToSearchHistory(cityname) {
   let historyString = localStorage.getItem("history")
   const history = JSON.parse(historyString)
@@ -43,25 +43,25 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((data) => {
 
-    // separate data by day
+    // Separate data by day
     const days = {}
 
-    // loop through every result out of 40
+    // Loop through every result out of 40
     data.list.forEach(dataObj => {
       // strip the time off of the date text, so we just have the day
       const day = dataObj.dt_txt.substr(0, 10)
 
-      // if its the first time we see this day, add it to days data
+      //If its the first time we see this day, add it to days data
       if (!days[day]) {
         days[day] = []
       }
 
-      // push the data in to the days data
+      // Push the data in to the days data
       days[day].push(dataObj);
     });
 
    
-    // figure out the max temp, wind and humidity for each day
+    // Assess max temp, wind and humidity for each day
     weatherDaysHigh = []
     for (const day in days) {
       // create new arrays with just the values
@@ -80,14 +80,14 @@ fetch(apiURL)
       })
     } 
 
-  //Looping thru daily data and inserting into page 
+  //Loop thru daily data and insert into page 
     document.getElementById("Cityname").innerText = data.city.name
 
     for (let index = 0; index < weatherDaysHigh.length; index++) {
-      document.getElementById(`Temp${index}`).innerText = "Temp " + weatherDaysHigh[0].maxTemp + "F";
-      document.getElementById(`Humidity${index}`).innerText = "Humidity " + weatherDaysHigh[0].maxHumidity + "%";
-      document.getElementById(`Wind${index}`).innerText = "Wind " + weatherDaysHigh[0].maxWinds + " mph"; 
-      document.getElementById(`Date${index}`).innerText = "" + weatherDaysHigh[0].day + ""
+      document.getElementById(`Temp${index}`).innerText = "Temp " + weatherDaysHigh[index].maxTemp + "F";
+      document.getElementById(`Humidity${index}`).innerText = "Humidity " + weatherDaysHigh[index].maxHumidity + "%";
+      document.getElementById(`Wind${index}`).innerText = "Wind " + weatherDaysHigh[index].maxWinds + " mph"; 
+      document.getElementById(`Date${index}`).innerText = "" + weatherDaysHigh[index].day + ""
     }
 
     addCityToSearchHistory(cityname)
@@ -96,8 +96,7 @@ fetch(apiURL)
   });
 }
 
-
-/* code run for page loading */
+/* Code : for page loading */
 window.onload = function() {
   document.getElementById("searchButton").addEventListener('click',function() {
     let value = document.getElementById ("city").value;

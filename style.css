@@ -16,10 +16,10 @@ h1{
  font-weight: bold
  text-color: #613864;
 }
-/* help*/
+
 header{
   color:dark grey;
-  size:150px;
+  size:200px;
   text-align:center;
   padding-top:10px;
   padding-bottom:5px;
@@ -28,18 +28,15 @@ header{
 }
 
 .header {
-  background-color: #cfdb99;
-    padding: 20px;
+  background-color: rgba(255, 99, 71, 0.791);
+    padding: 30px;
 }
-/*help*/
+
 .Date{
   margin: 5px;
   padding-bottom: 15px;
-  font-size: 30px
-  
+  font-size: 30px 
 } 
-  
-  /*Temp, Wind, Humidity Index ??*/
 
 .sidebar{
  width: 75% 
@@ -48,22 +45,13 @@ header{
  margin-right: 20px;
  float: left;
 }
-/*help*/
-.search-form
-
-.CityName
-
-.active
 
 
 button: hover{
  background-color: #48515B; 
  padding: 10px;
 }
-/*help*/
-cityList{
-  
-}
+
 
 .container-1{
   display:flex;
@@ -113,7 +101,7 @@ cityList{
   padding: 20px;
 }
 
-.forecastInput
+
 
 
 
