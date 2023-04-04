@@ -18,7 +18,7 @@ The different weather data that is accessible includes temperature, humidity and
 
 To use the application, open the Weather Dashboard via index.HTML file in your browser to view the weather data .
 
-*The URL of the functional, deployed application on GitHub Pages: 
+*The URL of the functional, deployed application on GitHub Pages: https://beverleytiare.github.io/challenge-6-weather/
 
 *The URL of the GitHub repository: https://github.com/BeverleyTiare/challenge-6-weather
 
