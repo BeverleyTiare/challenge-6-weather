@@ -20,7 +20,7 @@ To use the application, open the Weather Dashboard via index.HTML file in your b
 
 *The URL of the functional, deployed application on GitHub Pages: 
 
-*The URL of the GitHub repository: 
+*The URL of the GitHub repository: https://github.com/BeverleyTiare/challenge-6-weather
 
 ##Acknowledgement
 
