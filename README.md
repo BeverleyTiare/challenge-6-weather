@@ -1,27 +1,33 @@
 # challenge-6-weather
 
-Weather Dashboard
+##Weather Dashboard
+
 This project was on developing a Weather Dashboard that features HTML, CSS and JavaScript, that links to an external site to retrieve weather data for cities, across a 5-Day period. The application links to the following API: https://api.openweathermap.org. In addition, the application uses local storage to store any persistent data, to thus allow the user to save and track weather data and events.
 
-Usage
+##Usage
+
 The application uses the API as above to access weather forecasts over a duration of 5 days. The user enters a city to name to access data and storage of data is also featured.
 
 The different weather data that is accessible includes temperature, humidity and wind.
 
-Screenshot : 
+##Screenshot 
+
 ![Weather DASHB](https://user-images.githubusercontent.com/122957548/229702257-9dc87625-7c58-4281-8d88-286d57ba4eb6.png)
 
-Usage:
+##Usage
+
 To use the application, open the Weather Dashboard via index.HTML file in your browser to view the weather data .
 
-**The URL of the functional, deployed application on GitHub Pages: 
+*The URL of the functional, deployed application on GitHub Pages: 
 
-**The URL of the GitHub repository: 
+*The URL of the GitHub repository: 
 
-Acknowledgement
+##Acknowledgement
+
 Bootcamp TAs, tutors, opensource code sites, W3 schools, MDN, stackoverflow, medium, full stack blog.
 
-License
+##License
+
 MIT License
 
 Copyright © 2023 BeverleyTiare
